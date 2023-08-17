@@ -2,15 +2,15 @@
   Place Service Challenge
 </h1>
 
-API para gerenciar lugares (CRUD) que faz parte [desse desafio](https://github.com/RocketBus/quero-ser-clickbus/tree/master/testes/backend-developer) para pessoas desenvolvedoras backend que se candidatam para a ClickBus.
+API to manage places (CRUD) that is part of [this challenge](https://github.com/RocketBus/quero-be-clickbus/tree/master/tests/backend-developer) for backend developers applying to ClickBus.
 
-O projeto foi elaborado após a excelente explicação da Giuliana Bezerra [nesse vídeo](https://youtu.be/SsWZ4O9iWuo).
+The project was elaborated after the excellent explanation of Giuliana Bezerra [in this vídeo](https://youtu.be/SsWZ4O9iWuo).
 
-[Perfil Giuliana Bezerra](https://github.com/giuliana-bezerra)
+[Profile Giuliana Bezerra](https://github.com/giuliana-bezerra)
 
 [Linkedin Giuliana Bezerra](https://www.linkedin.com/in/giulianabezerra/)
 
-## Tecnologias
+## Technologies
  
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Spring Webflux](https://docs.spring.io/spring-framework/reference/web/webflux.html)
@@ -18,56 +18,56 @@ O projeto foi elaborado após a excelente explicação da Giuliana Bezerra [ness
 - [SpringDoc OpenAPI 3](https://springdoc.org/v2/#spring-webflux-support)
 - [Slugify](https://github.com/slugify/slugify)
 
-## Práticas adotadas
+## Design patterns
 
 - SOLID
-- Testes automatizados
-- Consultas com filtros dinâmicos usando o Query By Example
-- API reativa na web e na camada de banco
-- Uso de DTOs para a API
-- Injeção de Dependências
-- Geração automática do Swagger com a OpenAPI 3
+- Automated tests
+- Queries with dynamic filters using Query By Example
+- Reactive API in the web and database layer
+- Using DTOs for the API
+- Dependency Injection
+- Automatic Swagger generation with OpenAPI 3
 - Geração de slugs automática com o Slugify
-- Auditoria sobre criação e atualização da entidade
+- Entity creation and update audit
 
-## Como Executar
+## How to Run
 
-### Localmente
-- Clonar repositório git
-- Construir o projeto:
+### Locally
+- Clone git repository
+- Build the project:
 ```
 ./mvnw clean package
 ```
-- Executar:
+- Execute:
 ```
 java -jar place-service/target/place-service-0.0.1-SNAPSHOT.jar
 ```
 
-A API poderá ser acessada em [localhost:8080](http://localhost:8080).
-O Swagger poderá ser visualizado em [localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+The API can be accessed at [localhost:8080](http://localhost:8080).
+Swagger can be viewed at [localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
-### Usando Docker
+### Using Docker
 
-- Clonar repositório git
-- Construir o projeto:
+- Clone git repository
+- Build the project:
 ```
 ./mvnw clean package
 ```
-- Construir a imagem:
+- Build the image:
 ```
 ./mvnw spring-boot:build-image
 ```
-- Executar o container:
+- Run the container:
 ```
 docker run --name place-service -p 8080:8080  -d place-service:0.0.1-SNAPSHOT
 ```
 
-A API poderá ser acessada em [localhost:8080](http://localhost:8080).
-O Swagger poderá ser visualizado em [localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+The API can be accessed at [localhost:8080](http://localhost:8080).
+Swagger can be viewed at [localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ## API Endpoints
 
-Para fazer as requisições HTTP abaixo, foi utilizada a ferramenta [httpie](https://httpie.io):
+To make the HTTP requests below, the tool was used [httpie](https://httpie.io):
 
 - POST /places
 ```
