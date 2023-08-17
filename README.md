@@ -27,7 +27,7 @@ The project was elaborated after the excellent explanation of Giuliana Bezerra [
 - Using DTOs for the API
 - Dependency Injection
 - Automatic Swagger generation with OpenAPI 3
-- Geração de slugs automática com o Slugify
+- Automatic slug generation with Slugify
 - Entity creation and update audit
 
 ## How to Run
